@@ -37,3 +37,6 @@ public class Character {
         }
     }
 }
+
+# UML Diagram
+![stratpattern](https://github.com/SimounReyes/stratPattern/assets/142649580/0c2d4e04-4f08-4557-aca5-95ec21395598)
