@@ -1,4 +1,5 @@
-public interface Type{
+public interface Type {
     public String attack();
+
     public String defend();
 }

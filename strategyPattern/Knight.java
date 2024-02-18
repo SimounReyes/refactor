@@ -1,15 +1,16 @@
-public class Knight implements Type{
-    public String attack(){
-        String att = "Knight attacks with a sword!";
-        return att;
+public class Knight implements Type {
+    public String attack() {
+        SwingSword swingSword = new SwingSword();
+
+        return "KNIGHT IS ATTACKING:\n" + swingSword.AttackEnemy();
     }
 
-    public String defend(){
-        String def = "";
-        def += "Using a shield to defend!\n";
-        def += "Dodgin to avoid attack!\n";
-        def += "Creating a magic barrier for defense!";
-       	
-        return def;
+    public String defend() {
+        CastMagicBarrier castMagicBarrier = new CastMagicBarrier();
+        Dodge dodge = new Dodge();
+        Shield shield = new Shield();
+
+        return "KNIGHT IS DEFENDING:\nKnight is " + shield.DefendYourself() +
+                "\nKnight is " + dodge.DefendYourself() + "\nKnight is " + castMagicBarrier.DefendYourself();
     }
 }
